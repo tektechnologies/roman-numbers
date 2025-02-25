@@ -3,6 +3,7 @@ console.log('for-loop.js');
 
 
 let romanToInt = function(stringOfNumbers){
+    console.log()
     let romanNumToInteger ={
         I: 1,
         V: 5,
@@ -13,6 +14,11 @@ let romanToInt = function(stringOfNumbers){
         M: 1000
     }
     console.log('Roman to Number: ', romanNumToInteger);
+    let totalCount;
+    
+
+
+
 
 }
 
@@ -20,4 +26,4 @@ let romanToInt = function(stringOfNumbers){
 
 
 
-romanToInt();
+romanToInt('MDLI');
