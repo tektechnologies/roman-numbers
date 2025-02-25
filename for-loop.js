@@ -15,7 +15,12 @@ let romanToInt = function(stringOfNumbers){
     }
     console.log('Roman to Number: ', romanNumToInteger);
     let totalCount;
-    
+    for (let i = 0; i < stringOfNumbers.length; i++){
+        //get the 'current'  char/nodeLL which is the starting Roman Numberable Character
+        let currentInt = romanNumToInteger[stringOfNumbers.charAt(i)];
+        console.log('Current Node: ', currentInt);
+        let nextInt = romanToInt[stringOfNumbers.charAt(i + 1)];
+    }
 
 
 
