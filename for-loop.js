@@ -27,13 +27,16 @@ let romanToInt = function(stringOfNumbers){
         //happy path (if the current Roman Numberal is larger than the next Roman Numberal)
         if(currentInt >= nextInt){
             total += currentInt;
-        } 
+        } else {
+            //if the next Roman Numberal is greater than Current subtract the lesser/current from the next. 
+            total += (nextInt - currentInt);
+        }
     }
 
 
 
 
-}
+};
 
 
 
