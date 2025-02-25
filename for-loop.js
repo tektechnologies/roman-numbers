@@ -16,10 +16,18 @@ let romanToInt = function(stringOfNumbers){
     console.log('Roman to Number: ', romanNumToInteger);
     let totalCount;
     for (let i = 0; i < stringOfNumbers.length; i++){
-        //get the 'current'  char/nodeLL which is the starting Roman Numberable Character
+        //get the 'current'  char/nodeLL which is the starting Roman Numberal Character
         let currentInt = romanNumToInteger[stringOfNumbers.charAt(i)];
         console.log('Current Node: ', currentInt);
         let nextInt = romanToInt[stringOfNumbers.charAt(i + 1)];
+        console.log('Current.next() : ', nextInt);
+
+
+
+        //happy path (if the current Roman Numberal is larger than the next Roman Numberal)
+        if(currentInt >= nextInt){
+            total += currentInt;
+        } 
     }
 
 
