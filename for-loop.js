@@ -22,14 +22,23 @@ let romanToInt = function(stringOfNumbers){
         let nextInt = romanToInt[stringOfNumbers.charAt(i + 1)];
         console.log('Current.next() : ', nextInt);
 
+        //now that we are at the end of our LL or string in this case we can check to see if there is a 'next' number to compare
+        if(nextInt){
 
+            console.log('Checking for a next ',nextInt);
+
+
+
+        } else {
+            totalCount += currentInt;
+        }
 
         //happy path (if the current Roman Numberal is larger than the next Roman Numberal)
         if(currentInt >= nextInt){
-            total += currentInt;
+            totalCount += currentInt;
         } else {
             //if the next Roman Numberal is greater than Current subtract the lesser/current from the next. 
-            total += (nextInt - currentInt);
+            totalCount += (nextInt - currentInt);
             //move the to the next setup of nodes here with one ++
             i++; // which starts the move with the for loop i++ adding the second move so that we with current.next and current.next().next();
         }
