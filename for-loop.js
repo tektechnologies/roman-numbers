@@ -30,6 +30,8 @@ let romanToInt = function(stringOfNumbers){
         } else {
             //if the next Roman Numberal is greater than Current subtract the lesser/current from the next. 
             total += (nextInt - currentInt);
+            //move the to the next setup of nodes here with one ++
+            i++;
         }
     }
 
