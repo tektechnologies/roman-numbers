@@ -7,17 +7,17 @@ let romanNumData = {
     'I': 1,
     'V': 5,
     'X': 10,
-    'L':  50,
-    'C':  100,
+    'L': 50,
+    'C': 100,
     'D': 500,
-    'M': 1000 
+    'M': 1000
 };
-console.log('roman data: ',romanNumData);
+console.log('roman data: ', romanNumData);
 let totalCount = 0;
 
 
 
-function romanToInt(stringOfNumbers){
+function romanToInt(stringOfNumbers) {
     console.log('roman numeral', stringOfNumbers);
 
     for (let i = 0; i < stringOfNumbers.length; i++) {
@@ -38,7 +38,6 @@ function romanToInt(stringOfNumbers){
         }
     }
     return totalCount;
-
 }
 
 
@@ -48,15 +47,15 @@ function romanToInt(stringOfNumbers){
 let romanValue1 = romanToInt(romanNum1);
 let romanValue2 = romanToInt(romanNum2);
 
-console.log('conversion results: ',romanNum1,romanNum2);
+console.log('conversion results: ', romanNum1, romanNum2);
 
 
-if(romanNum1 > romanNum2){
+if (romanNum1 > romanNum2) {
     console.log(`${romanNum1} is greater than ${romanNum2}`);
 
-} else if(romanNum2 > romanNum1){
+} else if (romanNum2 > romanNum1) {
     console.log(`${romanNum1} is less than ${romanNum2}`);
 
-}else {
-console.log(`${romanNum1} is equal to ${romanNum2}`);
+} else {
+    console.log(`${romanNum1} is equal to ${romanNum2}`);
 }
