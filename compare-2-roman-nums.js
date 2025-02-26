@@ -51,3 +51,12 @@ let romanValue2 = romanToInt(romanNum2);
 console.log('conversion results: ',romanNum1,romanNum2);
 
 
+if(romanNum1 > romanNum2){
+    console.log(`${romanNum1} is greater than ${romanNum2}`);
+
+} else if(romanNum2 > romanNum1){
+    console.log(`${romanNum1} is less than ${romanNum2}`);
+
+}else {
+console.log(`${romanNum1} is equal to ${romanNum2}`);
+}
